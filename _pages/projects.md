@@ -20,8 +20,9 @@ Ours not to do and die, ours but to reason why.
   <h2>{{ page.dict[category] }}</h2>
   {% assign projects = site.projects | where: "category", category | sort: "importance" %}
   {% for project in projects %}
-    <div class="project">
-    <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+    <div class="project" id="{{project.name}}">
+      <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+      <div class="desc">{{ project.description | markdownify}}</div>
     </div>
   {% endfor%}
   </div>

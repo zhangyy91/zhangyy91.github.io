@@ -1,0 +1,16 @@
+---
+layout: page
+title: "FreeLauncher: Lossless Failure Recovery of Parameter Servers with Ultralight Replication"
+description: >
+  Modern distributed machine learning (ML) systems leverage large-scale computing infrastructures to achieve fast model training. For many servers jointly training a model, failure recovery becomes an important challenge when a training task could be accomplished in minutes rather than days. The state-of-the-art checkpointing mechanism cannot meet the need ofefficient recovery for large-scale ML, because its high cost prevents timely checkpointing and a server failure will likely causea substantial loss of intermediate results when the checkpointing intervals are comparable to the entire training times.
+
+  We proposes FreeLauncher (FLR), a lossless recovery mechanism for large-scale ML which performs ultralight replication (instead of checkpointing) to guarantee all intermediate training results (parameters) to be timely replicated. Our keyinsight is that in the parameter-server (PS) architecture therealready exist multiple copies for each intermediate result notonly in the server but also in the workers, most of which arequalified for failure recovery. FLR addresses the challenges ofparameter sparsity (e.g., when training LDA) and staleness (e.g.,when adopting relaxed consistency) by selectively replicating thelatest copies of the sparse/stale parameters to ensure at leastkup-to-date copies to be existent, which can handle any *k−1* failures by relaunching the failed servers with recovered parameters from workers. We implement FLR on Tensorflow. Evaluation results show that FLR achieves lossless failure recovery (almost requiring no recomputation) at little cost.
+
+img: 
+importance: 1
+category: system
+---
+
+Modern distributed machine learning (ML) systems leverage large-scale computing infrastructures to achieve fast model training. For many servers jointly training a model, failure recovery becomes an important challenge when a training task could be accomplished in minutes rather than days. The state-of-the-art checkpointing mechanism cannot meet the need ofefficient recovery for large-scale ML, because its high cost prevents timely checkpointing and a server failure will likely causea substantial loss of intermediate results when the checkpointing intervals are comparable to the entire training times.
+
+We proposes FreeLauncher (FLR), a lossless recovery mechanism for large-scale ML which performs ultralight replication (instead of checkpointing) to guarantee all intermediate training results (parameters) to be timely replicated. Our keyinsight is that in the parameter-server (PS) architecture therealready exist multiple copies for each intermediate result notonly in the server but also in the workers, most of which arequalified for failure recovery. FLR addresses the challenges ofparameter sparsity (e.g., when training LDA) and staleness (e.g.,when adopting relaxed consistency) by selectively replicating thelatest copies of the sparse/stale parameters to ensure at leastkup-to-date copies to be existent, which can handle any *k−1* failures by relaunching the failed servers with recovered parameters from workers. We implement FLR on Tensorflow. Evaluation results show that FLR achieves lossless failure recovery (almost requiring no recomputation) at little cost.
