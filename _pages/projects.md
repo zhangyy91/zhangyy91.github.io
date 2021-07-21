@@ -12,7 +12,7 @@ dict:
 ---
 
 
-Ours not to to and die, ours but to reason why.
+Ours not to do and die, ours but to reason why.
 
 <div class="projects">
   {% for category in page.categories %}

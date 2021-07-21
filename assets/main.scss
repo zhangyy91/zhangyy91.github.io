@@ -8,36 +8,9 @@
 /* from jemdoc */
 body {
 	background: white;
-	font-family: Georgia, serif;
+	font-family: Georgia, "PT Sans", "Noto Sans SC", "Microsoft YaHei", sans-serif;;
 	padding-bottom: 8px;
 	margin: 0;
-}
-
-
-tt {
-    background: #ffffdd;
-}
-
-pre, tt {
-	font-size: 90%;
-	font-family: monaco, monospace;
-}
-
-a, a > tt {
-	color: #224b8d;
-	text-decoration: none;
-}
-
-a:hover {
-	border-bottom: 1px gray dotted;
-}
-
-em {
-	font-style: italic;
-}
-
-strong {
-	font-weight: bold;
 }
 
 
@@ -73,28 +46,6 @@ p {
 	margin-bottom: 0.8em;
 	padding: 0;
 	line-height: 1.3;
-}
-
-pre {
-	padding: 0;
-	margin: 0;
-}
-
-div#footer {
-	font-size: small;
-	border-top: 1px solid #c0c0c0;
-	padding-top: 0.1em;
-	margin-top: 4.0em;
-	color: #c0c0c0;
-}
-
-div#footer a {
-	color: #80a0b0;
-}
-
-div#footer-text {
-	float: left;
-	padding-bottom: 8px;
 }
 
 ul, ol, dl {
@@ -149,35 +100,4 @@ ol ol {
 
 ol ol ol {
 	list-style-type: lower-roman;
-}
-
-table {
-    border: 2px solid black;
-    border-collapse: collapse;
-}
-
-td {
-    padding: 2px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    text-align: center;
-    border: 1px solid gray;
-}
-
-table + table {
-    margin-top: 1em;
-}
-
-tr.heading {
-    font-weight: bold;
-    border-bottom: 2px solid black;
-}
-
-img {
-    border: none;
-}
-
-table.imgtable, table.imgtable td {
-    border: none;
-    text-align: left;
 }
