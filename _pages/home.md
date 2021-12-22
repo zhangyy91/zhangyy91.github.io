@@ -20,7 +20,7 @@ Research interests
 {% bibliography --file mypapers --query @*[selected=true]* %}
 
 # Experience
- - Research Intern (May 2021 - Now)
+ - Research Intern (May 2021 - Aug 2021)
  
     **Alibaba Beijing**
 
