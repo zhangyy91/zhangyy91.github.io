@@ -7,7 +7,7 @@ permalink: /
 title: About
 nav: true
 ---
-I am ZHANG Yangyang (张扬扬), currently a Ph.D. candidate at the School of Computer Science and Engineering, Beihang University, China under the supervision of <a target="_blank" href="http://act.buaa.edu.cn/lijx/">Prof. Jianxin Li</a>.
+I am ZHANG Yangyang (张扬扬), currently a Ph.D. candidate at the School of Computer Science and Engineering, Beihang University, China under the supervision of <a target="_blank" href="https://myjianxin.github.io">Prof. Jianxin Li</a>.
 
 
 Research interests
