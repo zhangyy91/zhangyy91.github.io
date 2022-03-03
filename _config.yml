@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ZHANG Yangyang (张扬扬)
+title: ZHANG Yangyang / 张扬扬
 email: 
 emails:
   - zhangyybuaa\[@\]gmail.com
