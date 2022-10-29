@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Projects | ZHANG Yangyang / 张扬扬</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Projects" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="/projects/" />
+<meta property="og:url" content="/projects/" />
+<meta property="og:site_name" content="ZHANG Yangyang / 张扬扬" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Projects" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Projects","url":"/projects/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="icon" type="image/jpg" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABWUlEQVRIic3Vvy5tQRQG8B+nIBKE6HTCQxAkWiIqyb1xa52Gm/AIKJTEK2iplKgIbyC5idsguZX/rhzFnonj5OzjzNkkvmRlMrPX931rr9mzh8bQiwUchFgIa4XQilFs4xblqnjADqZRShHuxzLOa4jmxV+sYiBPtA2z2MX/BOHqeMER5tERxdfxr4BoXlxjpjWhdanow2actOMH9j+h8n38jPOWGs7lgpVHzTLZp/il+HKDWoi9HEngjFbwIg5lp/4dWmokphb2bl+rW7QUxssmDCJnsV7Sn1DFcBMGI4F7VblY/QbtYexswiByXuol/fbWy9UE8bUK3tIHuX7hEU8YbEB8CM+BM9doRRuhml31z0oJeyF3o1FxstvqOhA3c0xK2PK2sT0pBjCB+yBwiknZRnZiCmfh2R3GU8UjxmS3Vd6f80J2iguhGys4wU2IY9m12lVU/PvjFe08kNEMyvZ+AAAAAElFTkSuQmCC"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="ZHANG Yangyang / 张扬扬" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">ZHANG Yangyang / 张扬扬</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/projects/">Projects</a><a class="page-link" href="/publications/">Publications</a><a class="page-link" href="/team/">Team</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article>
+
+  <header>
+    <h1 >Projects</h1>
+  </header>
+
+  <div>
+    <p>Ours not to do and die, ours but to reason why.</p>
+
+<div class="projects">
+  
+  <div class="category">
+  <h2>Distributed System</h2>
+  
+  
+    <div class="project">
+      <h3><a href="/projects/FreeLauncher/">FreeLauncher: Lossless Failure Recovery of Parameter Servers with Ultralight Replication</a></h3>
+      <div class="desc"><p>Modern distributed machine learning (ML) systems leverage large-scale computing infrastructures to achieve fast model training. For many servers jointly training a model, failure recovery becomes an important challenge when a training task could be accomplished in minutes rather than days. The state-of-the-art checkpointing mechanism cannot meet the need ofefficient recovery for large-scale ML, because its high cost prevents timely checkpointing and a server failure will likely causea substantial loss of intermediate results when the checkpointing intervals are comparable to the entire training times.
+We proposes FreeLauncher (FLR), a lossless recovery mechanism for large-scale ML which performs ultralight replication (instead of checkpointing) to guarantee all intermediate training results (parameters) to be timely replicated. Our keyinsight is that in the parameter-server (PS) architecture therealready exist multiple copies for each intermediate result notonly in the server but also in the workers, most of which arequalified for failure recovery. FLR addresses the challenges ofparameter sparsity (e.g., when training LDA) and staleness (e.g.,when adopting relaxed consistency) by selectively replicating thelatest copies of the sparse/stale parameters to ensure at leastkup-to-date copies to be existent, which can handle any <em>k−1</em> failures by relaunching the failed servers with recovered parameters from workers. We implement FLR on Tensorflow. Evaluation results show that FLR achieves lossless failure recovery (almost requiring no recomputation) at little cost.</p>
+</div>
+    </div>
+  
+    <div class="project">
+      <h3><a href="/projects/HotML/">HotML: A DSM-based Machine Learning System</a></h3>
+      <div class="desc"><p>In big data era, social networks, such as Twitter, Weibo, Facebook, are becoming more and more popular worldwide. To help social networks analysis, many machine learning (ML) algorithms have been adopted, e.g. user classification, link prediction, sentiment analysis, recommendations, etc. However, the dataset could be so large that it might take even days to train a model on a machine learning system. Performance issues should be considered to boost the training process. In this paper, we proposed HotML, a general machine learning system. HotML is designed in the parameter server (PS) architecture where the servers manage the globally shared parameters organized in tabular structure, and the workers compute the dataset in parallel and update the global parameters. HotML supports high-level data abstraction and Map/Reduce-like data flow operations with user-friendly interface, flexible consistency models like SSP, fault tolerance including consistent server-side checkpoint and flexible worker-side checkpoint, and workload balancing. Experimental results show that HotML can reduce networking time by about 74%, and achieve up to 1.9× performance compared to the popular ML system, Petuum.</p>
+</div>
+    </div>
+  
+    <div class="project">
+      <h3><a href="/projects/SPFC/">SPFC: Asynchronous Graph Processing System</a></h3>
+      <div class="desc"><p>The real-world demands of mining big data and smart data of graph structure have led to an active research of distributed graph processing. Many distributed graph processing systems adopt a vertex-centric programming paradigm. In these systems, messages are passed between vertices to propagate the latest states. The communication efficiency and the high overhead of synchronization are two key considerations of these systems. In this work, we propose a Slow Passing Fast Consuming (SPFC) approach which can effectively improve the overall performance of vertex-centric graph processing systems. In our approach, the message passing is slow but the consuming is fast. More specifically, at the message sender side, priority is given to those smart messages which contribute more to the algorithm convergence, and at the message receiver side, messages are consumed right after arriving without any delay and intermediate buffer. Besides, by using a two-phase termination check protocol, the global synchronous barrier can be completely eliminated. In addition, based on the slow message passing strategy, further performance improvement can be achieved with some accuracy loss by eliminating those messages which are less useful for algorithm convergence. We implement our approach based on Apache Giraph and evaluate it on a 12-machine cluster. The experimental results show that our method can effectively reduce the amount of message traffic and achieve up to an order of magnitude performance improvement compared with Giraph and GraphLab.</p>
+</div>
+    </div>
+  
+  </div>
+  
+  <div class="category">
+  <h2>Machine Learning</h2>
+  
+  
+    <div class="project">
+      <h3><a href="/projects/BIGAT2VEC/">BIGAT2VEC: Attributed Bipartite Network Embedding</a></h3>
+      <div class="desc"><p>This work investigates the modeling of attributes along with network structure for representation learning of the bipartite networks. Most of the attributed network representation learning (NRL) works consider the homogeneous type network only. However, these methods, when apply to bipartite type networks, may not be beneficial to learn an informative representation of nodes for predictive analysis. Hence, we propose a BIGAT2VEC framework that examines the internode relationships in the form of direct and indirect relations between two different as well as the same node type of bipartite network to preserve both structure and attribute context. 
+In BIGAT2VEC, learning is enforced on two levels:  1. Direct inter-node relationship between nodes of different type (either through the edge or attribute similarities perspective) by minimizing the probabilities through KL divergence; 2. Indirect inter-node relationship within same node type (either through 2nd order neighborhood proximity and attributes similarities perspective) by employing shallow neural network model through maximizing the probabilities.
+These two levels are separately optimized, and we leverage its learned embeddings through late fusion to further execute the network mining tasks such as link prediction, node classification (multi-class and multilabel), and visualization. We perform extensive experiments on various datasets and evaluate our method with several baselines. The results show the BIGAT2VEC efficacy as compare to other (non)attributed representation learning methods.</p>
+</div>
+    </div>
+  
+  </div>
+  
+
+</div>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">ZHANG Yangyang / 张扬扬</li><li class="u-email">zhangyybuaa\[@\]gmail.com</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/zhangyy91"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">zhangyy91</span></a></li><li><a href="https://scholar.google.com/citations?user=vJNpuygAAAAJ"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#googlescholar"></use></svg> <span class="username">Google Scholar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <ul class="contact-list"><li><a class="page-link" href="/">Home</a></li><li><a class="page-link" href="/projects/">Projects</a></li><li><a class="page-link" href="/publications/">Publications</a></li><li><a class="page-link" href="/team/">Team</a></li></ul>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
